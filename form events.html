@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="" method="" onsubmit="submitFunction()">
+        <fieldset>
+            <legend>Personal Details</legend>
+            
+
+            <label for="">First Name:</label><input id="fname" class="u"   type="text" name="First Name"
+                placeholder="Enter Your First Name" value="" required 
+                onfocus="focusFunction(this)" onblur="blurFunction(this)" onreset="resetFunction()"
+                onchange="changeFunction(this)" onselect="selectFunction()" oninvalid="invalidFunction()"/><br><br>
+            <label for="">Last Name:</label><input id="" class="u" type="text" name="Last Name"
+                placeholder="Enter Your Last Name" value="" required onfocus="focusFunction(this)"onblur="blurFunction(this)"/><br><br>
+            <label for="">Email:</label>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<input id="" class="u" type="email"
+                name="email" placeholder="Enter you email"  required onfocus="focusFunction(this)"onblur="blurFunction(this)"/><br><br>
+            <label for="">Password:</label>&nbsp;<input id="" class="u" type="password" name="password"
+                placeholder="Enter you password" required onfocus="focusFunction(this)"onblur="blurFunction(this)"/><br><br>
+
+            <label for="">Gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input  required type="radio" name="Gender"
+                id="male"  /><label for="male">Male&nbsp;</label><input  required type="radio" name="Gender" id="female" /><label
+                for="female">Female &nbsp;</label><input  required type="radio" name="Gender" id="Custom" /><label
+                for="Custom">Custom</label> <br>
+
+            <label for="">
+                <h4>Country:</h4>
+            </label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="" id="selection" size="" oninput="inputFunction(this)"onfocus="focusFunction(this)"onblur="blurFunction(this)"  required >
+                <option value="Select Your Country" selected disabled>Select Your Country</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="India">India</option>
+                <option value="Chaina">Chaina</option>
+                <option value="England">England</option>
+                <option value="Australia">Australia</option>  
+                
+            </select><br><br>
+            <div id="test"></div>          
+
+            <label for="">Upload Your Passport Size Picture</label> <input type="file" accept="image/*" name="" required/><br><br>
+
+            <input id="btn1" type="Reset">
+            <input id="btn1" type="submit" width="20px">
+             @Muhammad Uzair
+        </fieldset>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
